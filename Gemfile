@@ -7,6 +7,7 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 gem 'mysql2'
+#gem 'thinking-sphinx' #, "~> 2.0.11"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,7 +18,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "rake", "0.8.7"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

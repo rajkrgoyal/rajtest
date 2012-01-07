@@ -1,4 +1,6 @@
 Rajtest::Application.routes.draw do
+  resources :employees
+
   resources :contacts
 
   # The priority is based upon order of creation:
