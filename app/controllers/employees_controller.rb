@@ -6,7 +6,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @employees }
+      format.json { render :json => @employees }
     end
   end
 
@@ -17,7 +17,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @employee }
+      format.json { render :json =>  @employee }
     end
   end
 
@@ -28,7 +28,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @employee }
+      format.json { render :json =>  @employee }
     end
   end
 
@@ -44,11 +44,11 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       if @employee.save
-        format.html { redirect_to @employee, notice: 'Employee was successfully created.' }
-        format.json { render json: @employee, status: :created, location: @employee }
+        format.html { redirect_to @employee, :notice =>  'Employee was successfully created.' }
+        format.json { render :json =>  @employee, :status => :created, :location =>  @employee }
       else
-        format.html { render action: "new" }
-        format.json { render json: @employee.errors, status: :unprocessable_entity }
+        format.html { render  "new" }
+        format.json { render :json => @employee.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -60,11 +60,11 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       if @employee.update_attributes(params[:employee])
-        format.html { redirect_to @employee, notice: 'Employee was successfully updated.' }
+        format.html { redirect_to @employee, :notice => 'Employee was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @employee.errors, status: :unprocessable_entity }
+        format.html { render  "edit" }
+        format.json { render :json => @employee.errors, :status => :unprocessable_entity }
       end
     end
   end

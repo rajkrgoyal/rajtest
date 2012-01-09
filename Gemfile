@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
+gem 'thinking-sphinx', '2.0.10'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'mysql2'
+gem 'mysql'
 #gem 'thinking-sphinx' #, "~> 2.0.11"
 
 # Gems used only for assets and not required
