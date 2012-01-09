@@ -7,7 +7,7 @@ gem 'thinking-sphinx', '2.0.10'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'mysql'
+gem 'mysql2'
 #gem 'thinking-sphinx' #, "~> 2.0.11"
 
 # Gems used only for assets and not required
